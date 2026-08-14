@@ -8,17 +8,17 @@
     <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
     <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
     <meta id="metaDesc" name="description" content="Apartamento de temporada em Muro Alto, Porto de Galinhas. 2 quartos, 73m², no melhor trecho das piscinas naturais. Parque aquático, brinquedoteca, quadra esportiva.">
-    <link rel="canonical" href="https://polinesiaresort.com.br">
+    <link rel="canonical" href="https://polinesiaresort.com">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Polinésia Resort">
     <meta name="keywords" content="Polinésia Resort, Muro Alto, Porto de Galinhas, apartamento temporada, pé na areia, piscinas naturais, Ipojuca, Pernambuco">
     <meta name="theme-color" content="#0c4a6e">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://polinesiaresort.com.br">
+    <meta property="og:url" content="https://polinesiaresort.com">
     <meta property="og:title" content="Polinésia Resort — Muro Alto, Porto de Galinhas">
     <meta property="og:description" content="Apartamento de temporada com 2 quartos, 73m², acesso direto à praia. Parque aquático, restaurante, Wi-Fi. Reserve agora!">
-    <meta property="og:image" content="https://polinesiaresort.com.br/img/estrutura-03.png">
+    <meta property="og:image" content="https://polinesiaresort.com/img/estrutura-03.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="pt_BR">
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Polinésia Resort — Muro Alto, Porto de Galinhas">
     <meta name="twitter:description" content="Apartamento de temporada com 2 quartos, 73m², acesso direto à praia. Reserve agora!">
-    <meta name="twitter:image" content="https://polinesiaresort.com.br/img/estrutura-03.png">
+    <meta name="twitter:image" content="https://polinesiaresort.com/img/estrutura-03.png">
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -39,16 +39,16 @@
       "identifier": "polinesia-resort-muro-alto-7406",
       "name": "Polinésia Resort — Apartamento em Muro Alto",
       "description": "Apartamento de temporada com 2 quartos no Polinésia Residence & Resort. 73m², Wi-Fi, smart TV, ar-condicionado e acesso direto à praia de Muro Alto, Porto de Galinhas.",
-      "url": "https://polinesiaresort.com.br",
+      "url": "https://polinesiaresort.com",
       "image": [
-        "https://polinesiaresort.com.br/img/estrutura-03.png",
-        "https://polinesiaresort.com.br/img/sala-04.png",
-        "https://polinesiaresort.com.br/img/quarto-01.png",
-        "https://polinesiaresort.com.br/img/cozinha-01.png",
-        "https://polinesiaresort.com.br/img/varanda-01.png",
-        "https://polinesiaresort.com.br/img/estrutura-06.png",
-        "https://polinesiaresort.com.br/img/web-condo-2.jpg",
-        "https://polinesiaresort.com.br/img/estrutura-01.png"
+        "https://polinesiaresort.com/img/estrutura-03.png",
+        "https://polinesiaresort.com/img/sala-04.png",
+        "https://polinesiaresort.com/img/quarto-01.png",
+        "https://polinesiaresort.com/img/cozinha-01.png",
+        "https://polinesiaresort.com/img/varanda-01.png",
+        "https://polinesiaresort.com/img/estrutura-06.png",
+        "https://polinesiaresort.com/img/web-condo-2.jpg",
+        "https://polinesiaresort.com/img/estrutura-01.png"
       ],
       "numberOfRooms": 2,
       "floorSize": {
@@ -148,7 +148,6 @@
         gtag('config', 'G-TCPY93D2DT');
     </script>
     <link rel="dns-prefetch" href="https://flagcdn.com">
-    <link rel="dns-prefetch" href="https://servicos.polinesiaresort.com.br">
     <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3472,7 +3471,7 @@ document.querySelectorAll('.btn-outline').forEach(function(btn) {
 });
 
 // Quote Modal
-var quoteConfig = { enabled: true, url: 'https://servicos.polinesiaresort.com.br/search/', whatsapp: '', modo: 'completa' };
+var quoteConfig = { enabled: true, url: 'https://servicos.polinesiaresort.com/search/', whatsapp: '', modo: 'whatsapp' };
 
 // [ads] Origem do anúncio: Google Ads adiciona gclid; UTM manual também. Persiste na sessão
 // (o visitante navega e o carimbo permanece). Vira a tag [src:...] do WhatsApp (fonte_canal) e
@@ -3487,7 +3486,7 @@ var AD_SRC = (function () {
     } catch (e) { return ''; }
 })();
 
-fetch('https://servicos.polinesiaresort.com.br/search/config.php')
+fetch('https://servicos.polinesiaresort.com/search/config.php')
     .then(function(r) { return r.json(); })
     .then(function(data) {
         quoteConfig.enabled = data.cotacao_habilitada;
@@ -3531,7 +3530,7 @@ document.addEventListener('keydown', function(e) {
 // Reviews Carousel
 (async function loadReviews() {
     try {
-        const resp = await fetch('https://servicos.polinesiaresort.com.br/search/reviews.php');
+        const resp = await fetch('https://servicos.polinesiaresort.com/search/reviews.php');
         const data = await resp.json();
         if (!data.reviews || data.reviews.length === 0) return;
 
@@ -3650,7 +3649,7 @@ function submitLead() {
     var nome = document.getElementById('leadNome').value.trim();
     if (!email) return;
     var lang = localStorage.getItem('polinesia_lang') || 'pt';
-    fetch('https://servicos.polinesiaresort.com.br/search/save_lead.php', {
+    fetch('https://servicos.polinesiaresort.com/search/save_lead.php', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email: email, nome: nome, idioma: lang, origem: 'guide_popup' })
     }).catch(function(){});
@@ -3701,7 +3700,7 @@ function openWhatsApp() {
 // ---- Guide CTA (footer + exit intent) ----
 function sendGuideEmail(email, origem, callback) {
     var lang = localStorage.getItem('polinesia_lang') || 'pt';
-    fetch('https://servicos.polinesiaresort.com.br/search/save_lead.php', {
+    fetch('https://servicos.polinesiaresort.com/search/save_lead.php', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email: email, nome: '', idioma: lang, origem: origem })
     }).then(function(r){ return r.json(); }).then(function(d){
@@ -3732,12 +3731,12 @@ function footerStep2(como) {
     var lang = localStorage.getItem('polinesia_lang') || 'pt';
     var token = localStorage.getItem('polinesia_lead_token') || '';
     // Salva como_chegou
-    fetch('https://servicos.polinesiaresort.com.br/search/save_lead.php', {
+    fetch('https://servicos.polinesiaresort.com/search/save_lead.php', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email: footerEmail, nome: '', idioma: lang, origem: 'footer_cta', como_chegou: como })
     }).catch(function(){});
     // Envia email (independente)
-    fetch('https://servicos.polinesiaresort.com.br/search/send_guide_email.php', {
+    fetch('https://servicos.polinesiaresort.com/search/send_guide_email.php', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email: footerEmail, lang: lang, token: token })
     }).catch(function(){});
@@ -3766,11 +3765,11 @@ function exitStep1() {
 function exitStep2(como) {
     var lang = localStorage.getItem('polinesia_lang') || 'pt';
     var token = localStorage.getItem('polinesia_lead_token') || '';
-    fetch('https://servicos.polinesiaresort.com.br/search/save_lead.php', {
+    fetch('https://servicos.polinesiaresort.com/search/save_lead.php', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email: exitEmailVal, nome: '', idioma: lang, origem: 'exit_intent', como_chegou: como })
     }).catch(function(){});
-    fetch('https://servicos.polinesiaresort.com.br/search/send_guide_email.php', {
+    fetch('https://servicos.polinesiaresort.com/search/send_guide_email.php', {
         method: 'POST', headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email: exitEmailVal, lang: lang, token: token })
     }).catch(function(){});
@@ -3811,7 +3810,6 @@ var exitIdleTimer = setTimeout(function() {
 </script>
 
 <!-- Pre-capture: gera [sid:] e injeta nos links do WhatsApp p/ o bot recuperar a cidade-por-IP do visitante (token expira em 1 dia) -->
-<script src="https://servicos.polinesiaresort.com.br/api/precapture.js" async></script>
 
 </body>
 </html>
