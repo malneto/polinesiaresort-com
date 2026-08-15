@@ -873,8 +873,8 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
         <div class="hero-badge">Muro Alto &bull; Porto de Galinhas</div>
-        <h1 id="heroTitle">Suas férias no paraíso</h1>
-        <p id="heroSub">Apartamento amplo de 2 quartos com 73m² para você e sua família.</p>
+        <h1 id="heroTitle">Apartamento pé na areia em Muro Alto</h1>
+        <p id="heroSub">Apê inteiro de 2 quartos (73m²) pra família toda, com acesso à estrutura do Samôa Beach Resort.</p>
         <div class="hero-buttons">
             <button class="btn-quote" onclick="openQuoteModal()">
                 <span data-i18n="cta_quote">Obter cotação AGORA!</span>
@@ -1605,8 +1605,8 @@ const translations = {
         cmp_i5: "Gimnasio", cmp_i6: "Bar Puka Puka", cmp_i7: "Sala de juegos", cmp_i8: "Deportes acuáticos",
         cmp_cta_detail: "Ver comparativo completo", cmp_cta_quote: "Consultar valores",
         // Hero
-        hero_title: "Tus vacaciones en el paraíso",
-        hero_subtitle: "Amplio departamento de 2 dormitorios con 73m² para vos y tu familia.",
+        hero_title: "Departamento a pie de playa en Muro Alto",
+        hero_subtitle: "Departamento entero de 2 dormitorios (73m²) para toda la familia, con acceso a la estructura del Samôa Beach Resort.",
         hero_cta: "Solicitar Cotización",
         hero_photos: "Ver Fotos",
         // Features
@@ -1875,7 +1875,7 @@ const translations = {
         cmp_i5: "Gym", cmp_i6: "Puka Puka Bar", cmp_i7: "Game room", cmp_i8: "Water sports",
         cmp_cta_detail: "See full comparison", cmp_cta_quote: "Check rates",
         // Hero
-        hero_title: "Your vacation in paradise",
+        hero_title: "Beachfront apartment in Muro Alto",
         hero_subtitle: "Spacious 2-bedroom apartment with 73m\u00b2 for you and your family.",
         hero_cta: "Request a Quote",
         hero_photos: "View Photos",
@@ -3352,23 +3352,23 @@ function setLang(lang, persist) {
 }
 
 // Hero rotativo: alterna apê <-> acesso Samôa <-> piscinas naturais a cada 3s, respeitando o idioma
-var HERO0_PT = ["Suas férias no paraíso", "Apartamento amplo de 2 quartos com 73m² para você e sua família."];
+var HERO0_PT = ["Apartamento pé na areia em Muro Alto", "Apê inteiro de 2 quartos (73m²) pra família toda, com acesso à estrutura do Samôa Beach Resort."];
 // slots extras (1, 2...) por idioma — fallback en
 var HERO_ALT = {
     pt: [
-        ["Acesso completo ao hotel Samôa", "Hóspedes do Polinésia têm acesso completo ao hotel Samôa."],
+        ["Toda a estrutura do Samôa Beach Resort", "Piscinas, praia, restaurante e bar do resort — tudo liberado pro hóspede do Polinésia."],
         ["Melhor trecho das piscinas naturais", "Águas quentes a quase 30º durante o ano todo."]
     ],
     es: [
-        ["Acceso completo al hotel Samôa", "Los huéspedes del Polinésia tienen acceso completo al hotel Samôa."],
+        ["Toda la estructura del Samôa Beach Resort", "Piscinas, playa, restaurante y bar del resort — todo liberado para el huésped del Polinésia."],
         ["Mejor tramo de las piscinas naturales", "Aguas cálidas a casi 30º durante todo el año."]
     ],
     en: [
-        ["Full access to Samôa resort", "Polinésia guests get full access to the Samôa resort."],
+        ["Full access to Samôa Beach Resort", "Pools, beach, restaurant and bar — all open to Polinésia guests."],
         ["Best stretch of the natural pools", "Warm waters near 30º all year round."]
     ],
     fr: [
-        ["Accès complet au resort Samôa", "Les clients du Polinésia ont un accès complet au resort Samôa."],
+        ["Accès complet au resort Samôa Beach", "Les clients du Polinésia ont un accès complet au resort Samôa."],
         ["Meilleur tronçon des piscines naturelles", "Eaux chaudes à près de 30º toute l'année."]
     ]
 };
